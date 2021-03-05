@@ -21,7 +21,7 @@
     <body>
         <div class="page-header">
             <h1>
-                Hi, <b><?= ucwords($_SESSION['username']); ?></b>. Welcome to our site.
+                Hi, <b><?= htmlspecialchars(ucwords($_SESSION['username'])); ?></b>. Welcome to our site.
             </h1>
         </div>
         <p>
