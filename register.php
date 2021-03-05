@@ -9,7 +9,7 @@
         if (empty(trim($_POST['username']))) {
             $usernameErr = 'Please enter a username';
         }
-        else if(strlen(trim($_POST['username'])) > 9 || !preg_match('/^[a-zA-Z0-9]+$/', $_POST['username'])) {
+        else if(strlen(trim($_POST['username'])) > 10 || !preg_match('/^[a-zA-Z0-9]+$/', $_POST['username'])) {
             $usernameErr = 'Username should accept only alphanumeric limit 10 characters';
         }
         else {
